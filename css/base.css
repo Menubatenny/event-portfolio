@@ -353,8 +353,11 @@ form p{
 	width: 100%;
 }
 
+nav .fa-solid{
+	display: none;
+}
 
-/*  responsive   */
+/*  responsive  for phone */
 @media only screen and (max-width: 600px) {
 	.frame {
 		position: fixed;
@@ -402,6 +405,32 @@ form p{
 
 	.nav {
 		display: flex;
+	}
+	nav .fa-solid{
+		display: block;
+		font-size: 25px;
+	}
+
+	nav ul{
+		background:#424242 ;
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 200px;
+		height:100vh;
+		padding-top: 50px;
+		z-index: 2;
+		transition: right 0.5s;
+	}
+	nav ul li{
+		display: block;
+		margin: 25px;
+	}
+	nav ul .fa-solid{
+		position: absolute;
+		top: 25px;
+		left: 25px;
+		cursor: pointer;
 	}
 	
 }
