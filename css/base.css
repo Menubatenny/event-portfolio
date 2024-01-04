@@ -404,13 +404,10 @@ nav .fa-solid{
 .pos-20 { grid-area: 2 / 8; }
 .pos-21 { grid-area: 2 / 10; }
 .pos-22 { grid-area: 3 / 10; }
-.nav {
-	display: flex;
-}
 
 
 /*  responsive  for phone */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
 	.frame {
 		position: fixed;
 		height: 100vh;
@@ -485,6 +482,11 @@ nav .fa-solid{
 		top: 25px;
 		left: 25px;
 		cursor: pointer;
+	}
+	.fa-bars{
+		background: #262626;
+		position: fixed;
+		right: 10px;
 	}
 	
 }
